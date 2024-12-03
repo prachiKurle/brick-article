@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/brick-article/static/css/main.a75e7b2a.css",
+    "main.js": "/brick-article/static/js/main.db059d0d.js",
+    "static/js/453.593fa820.chunk.js": "/brick-article/static/js/453.593fa820.chunk.js",
+    "static/media/main-blog-image.jpg": "/brick-article/static/media/main-blog-image.0c7e71b320ef871bd77e.jpg",
+    "static/media/author.webp": "/brick-article/static/media/author.7a8f8f56afb20c0fa0fe.webp",
+    "index.html": "/brick-article/index.html",
+    "main.a75e7b2a.css.map": "/brick-article/static/css/main.a75e7b2a.css.map",
+    "main.db059d0d.js.map": "/brick-article/static/js/main.db059d0d.js.map",
+    "453.593fa820.chunk.js.map": "/brick-article/static/js/453.593fa820.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a75e7b2a.css",
+    "static/js/main.db059d0d.js"
+  ]
+}

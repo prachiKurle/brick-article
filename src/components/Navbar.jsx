@@ -28,19 +28,12 @@ const NavBar = () => {
   });
 
   const activeBar = {
-    borderLeft: "4px solid red",
+    borderLeft: "4px solid #2a2a2a",
     weight: "500",
     lineHeight: "24px",
     size: "20px",
     fontFamily: "Poppins",
   };
-
-  // const nonactiveBar = {
-  //   weight: "500",
-  //   lineHeight: "24px",
-  //   size: "20px",
-  //   fontFamily: "Poppins",
-  // };
 
   return (
     <>
@@ -87,14 +80,14 @@ const NavBar = () => {
               <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center">
                 <a href="mailto:info@skvbusiness.com">
                   <Button
-                    className="bg-tertiary text-primary primary-button border border-info poppins-600 me-3"
+                    className="bg-secondary text-primary primary-button border border-info poppins-600 me-3"
                     style={{ width: 44, height: 44, borderRadius: 22 }}
                   >
                     <GoMail size={18} />
                   </Button>
                 </a>
                 <div
-                  className="bg-tertiary text-primary primary-button border border-info poppins-500 me-3 d-flex justify-content-center align-items-center px-2"
+                  className="bg-white text-primary primary-button border border-info poppins-500 me-3 d-flex justify-content-center align-items-center px-2"
                   style={{
                     borderRadius: 22,
                     height: 44,
@@ -122,17 +115,20 @@ const NavBar = () => {
       </Breakpoint>
       <Breakpoint medium down>
         <Navbar
-          className={`d-flex flex-column w-100 bg-primary`}
+          className={`d-flex flex-column w-100 py-0`}
           fixed="top"
         >
+          <Container fluid className="bg-white d-flex justify-content-end px-lg-5" style={{height: 40}}>
+            Ar. Prachi Kurle
+          </Container>
           <Container
             fluid
-            className="pb-2 px-0 mx-0"
-            style={{ width: 95 + "%" }}
+            className="pb-2 px-3 mx-0 bg-primary"
+            // style={{ width: 95 + "%" }}
           >
             <div>
               <Navbar.Brand href="/" className="p-0 d-flex align-items-center">
-                <Image src={websiteLogo} alt="SKV Logo" width={60} loading="lazy" />
+                <Image src={websiteLogo} alt="Website logo" width={60} loading="lazy" />
               </Navbar.Brand>
             </div>
             <div className="d-flex">
@@ -199,7 +195,7 @@ const NavBar = () => {
                 <Modal.Body className="overflow-scroll">
                   <Container
                     as={animated.div}
-                    className="position-fixed overflow-scroll pb-5 w-100 bg-tertiary noScrollBar"
+                    className="position-fixed overflow-scroll pb-5 w-100 bg-secondary noScrollBar"
                     fluid
                     style={{
                       width: "100%",
@@ -223,9 +219,10 @@ const NavBar = () => {
                       >
                         <h3 className="poppins-500 p-0 m-0">Home</h3>
                       </Nav.Link>
-
                       <hr className="w-100" />
-
+                      <div className="w-100 d-flex justify-content-center">
+                        <GoogleTranslate />
+                      </div>
                       <a
                         href="mailto:info@skv.com"
                         className="m-3 text-primary d-flex flex-column justify-content-center align-items-center text-decoration-none"
@@ -236,21 +233,16 @@ const NavBar = () => {
                       </a>
                       <Nav.Link
                         as={Link}
-                        className="m-2 d-flex flex-column justify-content-center align-items-center"
-                        to="/get-in-touch"
+                        className="my-2 d-flex flex-column justify-content-center align-items-center"
+                        to="/contact"
                         onClick={() => setOpen(false)}
-                        style={activeBar}
+                        // style={activeBar}
                       >
                         <h3 className="poppins-500 p-0 m-0">
                           Contact
                         </h3>
                       </Nav.Link>
-
                       <hr className="w-100" />
-
-                      <Button className="m-1 mt-2 bg-transparent text-primary border-0 poppins-500 d-flex justify-content-center align-items-center">
-                        <GoogleTranslate />
-                      </Button>
                     </Nav>
                   </Container>
                 </Modal.Body>

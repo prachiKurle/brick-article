@@ -9,7 +9,7 @@ const Routers = () => {
       <Container fluid className="px-0 poppins">
         <Navbar />
         <Routes>
-          <Route path="" element={<Home />} />
+          <Route path="brick-article" element={<Home />} />
         </Routes>
         <Footer />
       </Container>

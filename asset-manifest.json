@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/brick-article/static/css/main.607d9dff.css",
-    "main.js": "/brick-article/static/js/main.2182ba08.js",
+    "main.css": "/brick-article/static/css/main.e603469e.css",
+    "main.js": "/brick-article/static/js/main.62816984.js",
     "static/js/453.593fa820.chunk.js": "/brick-article/static/js/453.593fa820.chunk.js",
+    "static/media/toi-image.jpg": "/brick-article/static/media/toi-image.b0c65faf62b2e5efe146.jpg",
     "static/media/main-blog-image.jpg": "/brick-article/static/media/main-blog-image.0c7e71b320ef871bd77e.jpg",
+    "static/media/toi-stats.png": "/brick-article/static/media/toi-stats.baba6c4d892b9342cf50.png",
+    "static/media/pune-metro-map.jpg": "/brick-article/static/media/pune-metro-map.5970dc4077e9c1e22c51.jpg",
+    "static/media/kohinoor-group.jpg": "/brick-article/static/media/kohinoor-group.47a8e92f22df05362f86.jpg",
     "static/media/website-logo.png": "/brick-article/static/media/website-logo.68a2dcf6949bd592341c.png",
     "static/media/author.webp": "/brick-article/static/media/author.7a8f8f56afb20c0fa0fe.webp",
     "index.html": "/brick-article/index.html",
-    "main.607d9dff.css.map": "/brick-article/static/css/main.607d9dff.css.map",
-    "main.2182ba08.js.map": "/brick-article/static/js/main.2182ba08.js.map",
+    "main.e603469e.css.map": "/brick-article/static/css/main.e603469e.css.map",
+    "main.62816984.js.map": "/brick-article/static/js/main.62816984.js.map",
     "453.593fa820.chunk.js.map": "/brick-article/static/js/453.593fa820.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.607d9dff.css",
-    "static/js/main.2182ba08.js"
+    "static/css/main.e603469e.css",
+    "static/js/main.62816984.js"
   ]
 }

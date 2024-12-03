@@ -1,93 +1,54 @@
 import React, { useState, useEffect } from "react";
-import { Container, Image } from "react-bootstrap";
-import { newSkvWhiteLogo } from "assets";
+import { Col, Container, Image, Row } from "react-bootstrap";
+import { websiteLogo } from "assets";
 import {
-  FaLinkedinIn,
-  FaSquareFacebook,
-  FaInstagram,
+  FaLinkedin,
+  FaPinterest,
+  FaSquareXTwitter,
   FaYoutube,
 } from "react-icons/fa6";
 import { HiPhone } from "react-icons/hi";
 import { useMediaQuery } from "react-responsive";
-import { t } from "i18next";
-import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowUp, IoMdMail } from "react-icons/io";
+import { IoLocationSharp } from "react-icons/io5";
 
 const Footer = () => {
   const large = useMediaQuery({ query: "(min-width: 992px)" });
   const [showComponent, setShowComponent] = useState(false);
 
-  const column1 = [
-    { id: 1, title: t("home"), route: "/" },
-    { id: 2, title: t("businessSetupServices"), route: "/business-setup-services" },
-    { id: 3, title: t("ourServices"), route: "/services" },
-    // { id: 3, title: "Promotions", route: "/promotions" },
-    { id: 4, title: t("aboutUs"), route: "/about-us" },
-    { id: 5, title: t("blogs"), route: "/blogs" },
-    { id: 6, title: t("contactUs"), route: "/get-in-touch" },
+  const resources = [
+    { id: 1, title: "Home", route: "/" },
+    { id: 5, title: "Contact Us", route: "/" },
   ];
 
-  const column2 = [
-    { id: 1, title: "Empowering Your Business Formation", route: "about-us" },
-    { id: 2, title: "Chairman's Message", route: "about-us/chairman-message" },
-    { id: 3, title: "Our Community", route: "our-community" },
-  ];
-
-  const column3 = [
-    { id: 1, title: t("UAEMainlandBusinessSetup"), route: "/services/uae-mainland-business-setup" },
-    { id: 2, title: t("UAE Free zone Business Setup"), route: "/services/uae-free-zone-business-setup" },
-    { id: 2, title: "UK Business Setup", route: "/uk-business-setup" },
-    { id: 2, title: "Hungary Business Setup", route: "/hungary-business-setup" },
-  ];
-
-  const column4 = [
-    { id: 1, title: t("licenseServices"), route: "/license-service" },
-    { id: 2, title: t("amlRegistration"), route: "/aml-registration" },
-    { id: 3, title: t("proServices"), route: "/pro-service" },
-    { id: 4, title: t("visaServices"), route: "/visa-service" },
-    { id: 5, title: t("vatAndCorporateTaxRegistration"), route: "/vat-corporate-tax-registration" },
-  ];
-
-  const column5 = [
-    { id: 1, title: "Single/Multi Entry Visa", route: "/visa-service" },
-    { id: 2, title: t("goldenVisa"), route: "/golden-visa" },
-    { id: 3, title: t("schengenVisa"), route: "/schengen-visa" },
-  ];
-
-  const differentLocationPhone = [
-    { id: 1, title: t("UAE") + ", +971 52 739 6758", number: "tel:+971 52 739 6758" },
-    { id: 2, title: t("unitedKingdom") + ", +44 77003 05114", number: "tel:+44 77003 05114" },
-    { id: 3, title: t("hungary") + ", +36 20 276 7431", number: "tel:+36 20 276 7431" },
-  ]
-
-  const lastLinks = [
-    { id: 1, title: t("privacyPolicy"), route: "/" },
-    { id: 2, title: t("termsOfService"), route: "/" },
+  const policies = [
+    { id: 1, title: "Privacy Policy", route: "/" },
   ];
 
   const socialMedia = [
     {
       id: 1,
-      title: t("linkedIn"),
-      icon: <FaLinkedinIn color="#FFFFFF" />,
-      route: "https://www.linkedin.com/in/skv-business-services-78b41130a/",
+      title: "LinkedIn",
+      icon: <FaLinkedin size={32} color="#e2e2e2" />,
+      route: "https://www.linkedin.com/in/prachi-kurle-815ba9331/",
     },
     {
       id: 2,
-      title: t("instagram"),
-      icon: <FaInstagram color="#FFFFFF" />,
-      route: "https://www.instagram.com/skv_business_services/",
+      title: "Twitter",
+      icon: <FaSquareXTwitter size={32} color="#e2e2e2" />,
+      route: "https://x.com/PRACHIKURLE",
     },
     {
       id: 3,
-      title: t("youtube"),
-      icon: <FaYoutube color="#FFFFFF" />,
-      route: "https://www.youtube.com/@SKVBusinessServices",
+      title: "Youtube",
+      icon: <FaYoutube size={32} color="#e2e2e2" />,
+      route: "https://www.youtube.com/@pixie1062",
     },
     {
       id: 4,
-      title: t("facebook"),
-      icon: <FaSquareFacebook color="#FFFFFF" />,
-      route: "https://www.facebook.com/profile.php?id=61557916137023",
+      title: "Pinterest",
+      icon: <FaPinterest size={32} color="#e2e2e2" />,
+      route: "https://www.pinterest.com/prachikurle54/",
     },
   ];
 
@@ -113,223 +74,129 @@ const Footer = () => {
   return (
     <Container
       fluid
-      className="pt-5 text-white"
-      style={{ backgroundColor: "#2E3192" }}
+      className="pt-5 text-white bg-primary"
     >
       <div
         className={`d-flex ${large ? "justify-content-between" : "flex-column"
           }`}
         style={large ? styles.largeScreenPadding : { padding: 10 }}
       >
-        <div className="mb-4 me-3">
-          <h5 className="subtitle pe-lg-4" style={{ fontWeight: 600 }}>
-            {t("quickLinks")}
+        <div className="me-3 mb-lg-0 mb-4">
+          <div className="text-center mb-5 d-flex justify-content-start">
+            <Image src={websiteLogo} style={{ width: large ? 200 : 100 }} />
+          </div>
+          <h5 className="subtitle pe-lg-4 text-secondary mb-4" style={{ fontWeight: 600 }}>
+            Contact Details
           </h5>
-          {column1.map((col) => {
-            return (
-              <div className="my-4">
-                <a
-                  href={col.route}
-                  target="_blank"
-                  className="text-decoration-none"
-                >
-                  <p className="footer-info footer-link">{col.title}</p>
-                </a>
-              </div>
-            );
-          })}
-        </div>
-        <div className="mb-4 me-3">
-          <h5
-            className="subtitle d-flex flex-column"
-            style={{ fontWeight: 600 }}
+          <a
+            href="/"
+            className="d-flex justify-lg-content-center align-items-center p-lg-0 mb-3"
+            style={{ textDecoration: "none" }}
           >
-            <span>{`${t("aboutUs")}`} </span>
-          </h5>
-          {column2.map((col) => {
-            return (
-              <div className="my-4">
-                <a
-                  href={col.route}
-                  target="_blank"
-                  className="text-decoration-none"
-                >
-                  <p className="footer-info footer-link">{col.title}</p>
-                </a>
-              </div>
-            );
-          })}
-        </div>
-        <div className="mb-4 me-3">
-          <h5 className="subtitle pe-lg-4" style={{ fontWeight: 600 }}>
-            {t("businessSetupServices")}
-          </h5>
-          {column3.map((col) => {
-            return (
-              <div className="my-4">
-                <a
-                  href={col.route}
-                  target="_blank"
-                  className="text-decoration-none"
-                >
-                  <p className="footer-info footer-link">{col.title}</p>
-                </a>
-              </div>
-            );
-          })}
-        </div>
-        <div className="mb-4 me-3">
-          <h5 className="subtitle pe-lg-4" style={{ fontWeight: 600 }}>
-            {t("ourServices")}
-          </h5>
-          {column4.map((col) => {
-            return (
-              <div className="my-4">
-                <a
-                  href={`/services${col.route}`}
-                  target="_blank"
-                  className="text-decoration-none"
-                >
-                  <p className="footer-info footer-link">{col.title}</p>
-                </a>
-              </div>
-            );
-          })}
-        </div>
-        <div className="mb-4 me-3">
-          <h5 className="subtitle pe-lg-4" style={{ fontWeight: 600 }}>
-            {t("visaServices")}
-          </h5>
-          {column5.map((col) => {
-            return (
-              <div className="my-4">
-                <a
-                  href={`/services${col.route}`}
-                  target="_blank"
-                  className="text-decoration-none"
-                >
-                  <p className="footer-info footer-link">{col.title}</p>
-                </a>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <div
-        className={`d-flex ${large ? "justify-content-between p-4" : "flex-column"
-          }`}
-        style={
-          large ? styles.largeScreenMargin : { backgroundColor: "#F2F5F7" }
-        }
-      >
-        {/* <div className="d-flex justify-content-center align-items-center ps-lg-5">
-          <span className="d-flex justify-content-center align-items-center text-primary" style={{ width: 32, height: 32, border: "1px solid #2E3192", borderRadius: 16 }}>
-            <IoLocationSharp />
-          </span>
-          <span className="text-primary body-text1 ms-3">Lorem ipsum dolor sit amet,</span>
-        </div> */}
-        {differentLocationPhone.map((location) => {
-          return (
-            <a
-              href={location.number}
-              className="d-flex justify-lg-content-center align-items-center p-lg-0 p-3"
-              style={{ textDecoration: "none" }}
-            >
-              <span
-                className="d-flex justify-content-center align-items-center text-primary"
-                style={{
-                  width: 32,
-                  height: 32,
-                  border: "1px solid #2E3192",
-                  borderRadius: 16,
-                }}
-              >
-                <HiPhone />
-              </span>
-              <b className="text-primary ms-3">{location.title}</b>
-            </a>
-          )
-        })}
-        {/* <div className="d-flex justify-content-center align-items-center pe-lg-5">
-          <span className="d-flex justify-content-center align-items-center text-primary" style={{ width: 32, height: 32, border: "1px solid #2E3192", borderRadius: 16 }}>
-            <IoMdMail />
-          </span>
-          <a href="mailto:info@skv.com">
-            <span className="text-primary body-text1 ms-3">info@skv.com</span>
+            <span className="d-flex justify-content-center align-items-center text-secondary border-0">
+              <IoLocationSharp />
+            </span>
+            <b className="text-secondary ms-2">Assistant Professor, SMEF's Brick School of Architecture, Pune - 411060</b>
           </a>
-        </div> */}
-      </div>
-
-      <div className="text-center my-5">
-        <Image src={newSkvWhiteLogo} alt="SKV White Logo" style={{ width: 200 }} />
+          <a
+            href="tel:+91 8552004072"
+            className="d-flex justify-lg-content-center align-items-center p-lg-0 mb-3"
+            style={{ textDecoration: "none" }}
+          >
+            <span className="d-flex justify-content-center align-items-center text-secondary border-0">
+              <HiPhone />
+            </span>
+            <b className="text-secondary ms-2">+91 8552004072</b>
+          </a>
+          <a
+            href="mailto:prachi@brick.edu.in"
+            className="d-flex justify-lg-content-center align-items-center p-lg-0"
+            style={{ textDecoration: "none" }}
+          >
+            <span className="d-flex justify-content-center align-items-center text-secondary border-0">
+              <IoMdMail />
+            </span>
+            <b className="text-secondary ms-2">prachi@brick.edu.in</b>
+          </a>
+        </div>
+        <div className="me-3">
+          <h5 className="subtitle pe-lg-4 text-secondary" style={{ fontWeight: 600 }}>
+            Resources
+          </h5>
+          {resources.map((col) => {
+            return (
+              <div className="my-4">
+                <a
+                  href={col.route}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-decoration-none"
+                >
+                  <p className="footer-info footer-link">{col.title}</p>
+                </a>
+              </div>
+            );
+          })}
+        </div>
+        <div className="me-3">
+          <h5 className="subtitle pe-lg-4 text-secondary" style={{ fontWeight: 600 }}>
+            Policies
+          </h5>
+          {policies.map((col) => {
+            return (
+              <div className="my-4">
+                <a
+                  href={col.route}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-decoration-none"
+                >
+                  <p className="footer-info footer-link">{col.title}</p>
+                </a>
+              </div>
+            );
+          })}
+        </div>
+        <div className="me-3">
+          <h5 className="subtitle text-secondary" style={{ fontWeight: 600 }}>
+            Social Connects
+          </h5>
+          <Row lg={4} className="mt-3">
+            {socialMedia.map((social) => {
+              return (
+                <Col className="mb-3 p-lg-0 p-2">
+                  <a
+                    href={social.route}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-decoration-none"
+                  >
+                    {social.icon}
+                  </a>
+                </Col>
+              );
+            })}
+          </Row>
+        </div>
       </div>
 
       <div
-        className={`${large ? "text-center position-relative" : "m-0"} pb-5`}
-        style={{ marginLeft: 100, marginRight: 100 }}
+        className={`pb-4 ${large ? "d-flex justify-content-center align-items-center" : "mt-4"}`}
+        style={{ right: 0, top: 0 }}
       >
-        <div
-          className={
-            large
-              ? "d-flex justify-content-center align-items-center position-absolute"
-              : ""
-          }
-        >
-          {lastLinks.map((col) => {
-            return (
-              <a className="me-lg-3" href={col.route} target="_blank">
-                <p className="footer-info footer-link">{col.title}</p>
-              </a>
-            );
-          })}
-        </div>
-        <div
-          className={`d-flex ${large ? "justify-content-center align-items-center" : "mt-5"
-            }`}
-        >
-          {socialMedia.map((social) => {
-            return (
-              <span
-                className="d-flex justify-content-center align-items-center border mx-lg-3 me-3"
-                style={{ width: 32, height: 32, borderRadius: 16 }}
-              >
-                <a
-                  href={social.route}
-                  target="_blank"
-                  className="text-decoration-none"
-                >
-                  {social.icon}
-                </a>
-              </span>
-            );
-          })}
-        </div>
-        <div
-          className={
-            large
-              ? "d-flex justify-content-center align-items-center position-absolute"
-              : "mt-4"
-          }
-          style={{ right: 0, top: 0 }}
-        >
-          <span className="footer-info">{`© 2024 SKV. ${t(
-            "allRightsReserved"
-          )}`}</span>
-        </div>
+        <span className="footer-info footer-link">{`© Ar. Prachi Kurle All Rights Reserved`}</span>
       </div>
-
       <div className={`${showComponent ? "" : "d-none"}`}>
         <div
-          className="d-flex my-2 my-lg-4 cursor-pointer"
+          className="d-flex text-primary my-2 my-lg-4 cursor-pointer bg-white border border-primary"
           style={{
             textDecoration: "none",
             scrollBehavior: "smooth",
             position: window.scrollY > 200 ? "fixed" : "static",
-            bottom: window.scrollY > 200 ? "0px" : "auto",
-            left: window.scrollY > 200 ? "20px" : "auto",
+            bottom: window.scrollY > 200 ? "20px" : "auto",
+            right: window.scrollY > 200 ? "20px" : "auto",
             padding: "12px",
-            backgroundColor: "#11066B",
+            backgroundColor: "#1B1E29",
             borderRadius: "25px",
           }}
           onClick={() => window.scrollTo(0, 0)}
@@ -340,39 +207,11 @@ const Footer = () => {
     </Container>
   );
 };
+
 const styles = {
-  parentContainer: {
-    backgroundColor: "#141415",
-    borderRadius: 0,
-  },
   largeScreenPadding: {
     paddingLeft: 100,
     paddingRight: 100,
-  },
-  largeScreenMargin: {
-    marginLeft: 100,
-    marginRight: 100,
-    backgroundColor: "#F2F5F7",
-  },
-  socialImage: {
-    cursor: "pointer",
-    width: "57px",
-    height: "57px",
-  },
-  socialImageMobile: {
-    cursor: "pointer",
-    height: "24px",
-    width: "24px",
-  },
-  youtubeImage: {
-    cursor: "pointer",
-    width: "57px",
-    height: "52px",
-  },
-  youtubeImageMobile: {
-    cursor: "pointer",
-    height: "20px",
-    width: "24px",
   },
 };
 

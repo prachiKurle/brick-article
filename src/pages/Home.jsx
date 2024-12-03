@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Col, Container, Row, Image, Button, Tooltip, OverlayTrigger } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Image, Button, Tooltip, OverlayTrigger } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 import { FiCopy } from "react-icons/fi";
 import { FaLinkedinIn, FaSquareFacebook, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
@@ -29,7 +29,7 @@ const Blog = () => {
   );
 
   return (
-    <Container fluid className="mt-5 pt-5">
+    <Container fluid className="my-5 py-5">
       <Container className="my-lg-5 pt-5 user-select-none d-flex flex-column justify-content-center align-items-center">
         <div className="d-flex flex-column justify-content-center align-items-center">
           <div className="text-primary poppins-600">

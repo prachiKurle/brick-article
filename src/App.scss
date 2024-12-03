@@ -1,5 +1,5 @@
-$primary: #2e3192;
-$secondary: #475467;
+$primary: #2a2a2a;
+$secondary: #e2e2e2;
 $tertiary: #eff0fa;
 $info: #dddddd;
 
@@ -39,4 +39,16 @@ body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+.footer-info {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer-link {
+  font-family: "Poppins";
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
 }

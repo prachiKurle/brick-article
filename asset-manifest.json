@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/brick-article/static/css/main.4ad7f649.css",
-    "main.js": "/brick-article/static/js/main.352f5fcf.js",
+    "main.css": "/brick-article/static/css/main.46f09bc2.css",
+    "main.js": "/brick-article/static/js/main.1cc59421.js",
     "static/js/453.593fa820.chunk.js": "/brick-article/static/js/453.593fa820.chunk.js",
+    "static/media/pune-metro-map.png": "/brick-article/static/media/pune-metro-map.b489f8749806b0ed8291.png",
     "static/media/toi-image.jpg": "/brick-article/static/media/toi-image.b0c65faf62b2e5efe146.jpg",
-    "static/media/main-blog-image.jpg": "/brick-article/static/media/main-blog-image.0c7e71b320ef871bd77e.jpg",
+    "static/media/magic-bricks.jpg": "/brick-article/static/media/magic-bricks.fb893afb0875d6910b71.jpg",
     "static/media/toi-stats.png": "/brick-article/static/media/toi-stats.baba6c4d892b9342cf50.png",
-    "static/media/pune-metro-map.jpg": "/brick-article/static/media/pune-metro-map.5970dc4077e9c1e22c51.jpg",
     "static/media/kohinoor-group.jpg": "/brick-article/static/media/kohinoor-group.47a8e92f22df05362f86.jpg",
     "static/media/prachi-kurle.webp": "/brick-article/static/media/prachi-kurle.35ad8f2fa13469ac0f07.webp",
     "static/media/vishakha-paygude.webp": "/brick-article/static/media/vishakha-paygude.a6322f7c5ac47ca3e3c8.webp",
     "index.html": "/brick-article/index.html",
-    "main.4ad7f649.css.map": "/brick-article/static/css/main.4ad7f649.css.map",
-    "main.352f5fcf.js.map": "/brick-article/static/js/main.352f5fcf.js.map",
+    "main.46f09bc2.css.map": "/brick-article/static/css/main.46f09bc2.css.map",
+    "main.1cc59421.js.map": "/brick-article/static/js/main.1cc59421.js.map",
     "453.593fa820.chunk.js.map": "/brick-article/static/js/453.593fa820.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ad7f649.css",
-    "static/js/main.352f5fcf.js"
+    "static/css/main.46f09bc2.css",
+    "static/js/main.1cc59421.js"
   ]
 }

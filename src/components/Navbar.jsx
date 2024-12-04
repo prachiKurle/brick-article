@@ -106,12 +106,11 @@ const NavBar = () => {
           fixed="top"
         >
           <Container fluid className="bg-white d-flex justify-content-end px-lg-5" style={{height: 40}}>
-            Ar. Prachi Kurle
+            Ar. Prachi Kurle & Ar. Vishakha Paygude
           </Container>
           <Container
             fluid
-            className="pb-2 px-3 mx-0 bg-primary"
-            // style={{ width: 95 + "%" }}
+            className="py-2 px-3 mx-0 bg-tertiary"
           >
             <div>
               <Navbar.Brand href="/" className="p-0 d-flex align-items-center">
@@ -126,7 +125,7 @@ const NavBar = () => {
                   setOpen(!open);
                 }}
               >
-                <IoIosMenu size={30} color="#ffffff" />
+                <IoIosMenu size={30} color="#000000" />
               </Button>
             </div>
           </Container>
@@ -151,12 +150,12 @@ const NavBar = () => {
                   }}
                 >
                   <Navbar
-                    className="d-flex flex-column w-100 bg-primary"
+                    className="d-flex flex-column w-100 bg-tertiary"
                     fixed="top"
                   >
                     <Container
                       fluid
-                      className="pb-2 px-0 mx-0"
+                      className="py-2 px-0 mx-0"
                       style={{ width: 95 + "%" }}
                     >
                       <Navbar.Brand
@@ -173,7 +172,7 @@ const NavBar = () => {
                             setOpen(false);
                           }}
                         >
-                          <RxCross2 size={25} color="#FFFFFF" />
+                          <RxCross2 size={25} color="#000000" />
                         </Button>
                       </div>
                     </Container>
@@ -182,7 +181,7 @@ const NavBar = () => {
                 <Modal.Body className="overflow-scroll">
                   <Container
                     as={animated.div}
-                    className="position-fixed overflow-scroll pb-5 w-100 bg-secondary noScrollBar"
+                    className="position-fixed overflow-scroll pb-5 w-100 bg-tertiary noScrollBar"
                     fluid
                     style={{
                       width: "100%",
@@ -218,17 +217,6 @@ const NavBar = () => {
                           <GoMail size={20} /> Mail
                         </h3>
                       </a>
-                      <Nav.Link
-                        as={Link}
-                        className="my-2 d-flex flex-column justify-content-center align-items-center"
-                        to="/contact"
-                        onClick={() => setOpen(false)}
-                        // style={activeBar}
-                      >
-                        <h3 className="lora-500 p-0 m-0">
-                          Contact
-                        </h3>
-                      </Nav.Link>
                       <hr className="w-100" />
                     </Nav>
                   </Container>

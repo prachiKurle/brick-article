@@ -18,11 +18,6 @@ const Footer = () => {
 
   const resources = [
     { id: 1, title: "Home", route: "/" },
-    { id: 5, title: "Contact Us", route: "/" },
-  ];
-
-  const policies = [
-    { id: 1, title: "Privacy Policy", route: "/" },
   ];
 
   const socialMedia = [
@@ -124,25 +119,6 @@ const Footer = () => {
             Resources
           </h5>
           {resources.map((col) => {
-            return (
-              <div className="my-4">
-                <a
-                  href={col.route}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-decoration-none"
-                >
-                  <p className="footer-info footer-link">{col.title}</p>
-                </a>
-              </div>
-            );
-          })}
-        </div>
-        <div className="me-3">
-          <h5 className="subtitle pe-lg-4 text-secondary" style={{ fontWeight: 600 }}>
-            Policies
-          </h5>
-          {policies.map((col) => {
             return (
               <div className="my-4">
                 <a

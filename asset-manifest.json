@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brick-article/static/css/main.46f09bc2.css",
-    "main.js": "/brick-article/static/js/main.1cc59421.js",
+    "main.js": "/brick-article/static/js/main.f57d6e7e.js",
     "static/js/453.593fa820.chunk.js": "/brick-article/static/js/453.593fa820.chunk.js",
     "static/media/pune-metro-map.png": "/brick-article/static/media/pune-metro-map.b489f8749806b0ed8291.png",
     "static/media/toi-image.jpg": "/brick-article/static/media/toi-image.b0c65faf62b2e5efe146.jpg",
@@ -12,11 +12,11 @@
     "static/media/vishakha-paygude.webp": "/brick-article/static/media/vishakha-paygude.a6322f7c5ac47ca3e3c8.webp",
     "index.html": "/brick-article/index.html",
     "main.46f09bc2.css.map": "/brick-article/static/css/main.46f09bc2.css.map",
-    "main.1cc59421.js.map": "/brick-article/static/js/main.1cc59421.js.map",
+    "main.f57d6e7e.js.map": "/brick-article/static/js/main.f57d6e7e.js.map",
     "453.593fa820.chunk.js.map": "/brick-article/static/js/453.593fa820.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46f09bc2.css",
-    "static/js/main.1cc59421.js"
+    "static/js/main.f57d6e7e.js"
   ]
 }

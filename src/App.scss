@@ -1,6 +1,6 @@
 $primary: #2a2a2a;
 $secondary: #e2e2e2;
-$tertiary: #eff0fa;
+$tertiary: #f5f5f5;
 $info: #dddddd;
 
 $theme-colors: (
@@ -11,13 +11,7 @@ $theme-colors: (
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
-
-// @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-// @import "slick-carousel/slick/slick.css";
-// @import "slick-carousel/slick/slick-theme.css";
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 html {
   //   font-size: 62.5%; // 1rem = 10px
@@ -32,7 +26,7 @@ html {
 body {
   min-width: 300px;
   // font-size: 16px !important;
-  // font-family: "Poppins", sans-serif;
+  // font-family: "Lora";
   // color: $fontColor;
   overflow-x: hidden !important;
   -ms-overflow-style: none;
@@ -42,109 +36,109 @@ body {
 }
 
 body {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Lora" !important;
 }
 
 .text-bold {
   font-weight: 600 !important;
 }
 
-.poppins {
-  font-family: "Poppins" sans-serif !important;
+.lora {
+  font-family: "Lora" !important;
 }
 
-.poppins-200 {
-  font-family: "Poppins" sans-serif;
+.lora-200 {
+  font-family: "Lora";
   font-weight: 200;
   font-style: normal;
 }
 
-.poppins-200-i {
-  font-family: "Poppins" sans-serif;
+.lora-200-i {
+  font-family: "Lora";
   font-weight: 200;
   font-style: italic;
 }
 
-.poppins-300 {
-  font-family: "Poppins" sans-serif;
+.lora-300 {
+  font-family: "Lora";
   font-weight: 300;
   font-style: normal;
 }
 
-.poppins-300-i {
-  font-family: "Poppins" sans-serif;
+.lora-300-i {
+  font-family: "Lora";
   font-weight: 300;
   font-style: italic;
 }
 
-.poppins-400 {
-  font-family: "Poppins" sans-serif;
+.lora-400 {
+  font-family: "Lora";
   font-weight: 400;
   font-style: normal;
 }
 
-.poppins-400-i {
-  font-family: "Poppins" sans-serif;
+.lora-400-i {
+  font-family: "Lora";
   font-weight: 400;
   font-style: italic;
 }
 
-.poppins-500 {
-  font-family: "Poppins" sans-serif;
+.lora-500 {
+  font-family: "Lora";
   font-weight: 500;
   font-style: normal;
 }
 
-.poppins-500-i {
-  font-family: "Poppins" sans-serif;
+.lora-500-i {
+  font-family: "Lora";
   font-weight: 500;
   font-style: italic;
 }
 
-.poppins-600 {
-  font-family: "Poppins" sans-serif;
+.lora-600 {
+  font-family: "Lora";
   font-weight: 600;
   font-style: normal;
 }
 
-.poppins-600-i {
-  font-family: "Poppins" sans-serif;
+.lora-600-i {
+  font-family: "Lora";
   font-weight: 600;
   font-style: italic;
 }
 
-.poppins-700 {
-  font-family: "Poppins" sans-serif;
+.lora-700 {
+  font-family: "Lora";
   font-weight: 700;
   font-style: normal;
 }
 
-.poppins-700-i {
-  font-family: "Poppins" sans-serif;
+.lora-700-i {
+  font-family: "Lora";
   font-weight: 700;
   font-style: italic;
 }
 
-.poppins-800 {
-  font-family: "Poppins" sans-serif;
+.lora-800 {
+  font-family: "Lora";
   font-weight: 800;
   font-style: normal;
 }
 
-.poppins-800-i {
-  font-family: "Poppins" sans-serif;
+.lora-800-i {
+  font-family: "Lora";
   font-weight: 800;
   font-style: italic;
 }
 
-.poppins-900 {
-  font-family: "Poppins" sans-serif;
+.lora-900 {
+  font-family: "Lora";
   font-weight: 900;
   font-style: normal;
 }
 
-.poppins-900-i {
-  font-family: "Poppins" sans-serif;
+.lora-900-i {
+  font-family: "Lora";
   font-weight: 900;
   font-style: italic;
 }
@@ -175,7 +169,7 @@ h5,
 }
 
 .page-header {
-  font-family: "Poppins" sans-serif;
+  font-family: "Lora";
   font-size: 36px !important;
   font-weight: 600;
 }
@@ -257,14 +251,14 @@ h5,
   }
 
   .body-text1 {
-    font-family: "Poppins" sans-serif !important;
+    font-family: "Lora" !important;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.5px;
   }
 
   .body-text2 {
-    font-family: "Poppins" sans-serif !important;
+    font-family: "Lora" !important;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.25px;
@@ -298,7 +292,7 @@ h5,
 }
 
 .footer-link {
-  font-family: "Poppins";
+  font-family: "Lora";
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;

@@ -4,11 +4,11 @@ import { useMediaQuery } from "react-responsive";
 import { FiCopy } from "react-icons/fi";
 import { FaLinkedinIn, FaSquareFacebook, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 import { FacebookShareButton, LinkedinShareButton, TwitterShareButton, WhatsappShareButton } from "react-share";
-import { kohinoorGroup, puneMetroMap, toiStats, toiImage, authorImage } from "assets";
+import { kohinoorGroup, puneMetroMap, toiStats, toiImage, prachiKurle } from "assets";
 
 const Blog = () => {
   const large = useMediaQuery({ query: "(min-width: 992px)" });
-  const tags_array = ["Pune", "Metro", "Real Estate Surg"]
+  const tags_array = ["Pune", "Metro", "Real Estate Surge"]
   const publishedData = "4th Dec 2024"
   const share_url = window.location.href;
   const [copied, setCopied] = useState(false);
@@ -30,28 +30,24 @@ const Blog = () => {
 
   return (
     <Container fluid className="my-5 py-5">
-      <Container className="my-lg-5 pt-5 user-select-none d-flex flex-column justify-content-center align-items-center">
+      <Container className="mt-lg-5 pt-5 user-select-none d-flex flex-column justify-content-center align-items-center" style={{ maxWidth: 900 }}>
         <div className="d-flex flex-column justify-content-center align-items-center">
-          <div className="text-primary poppins-600">
-            Published{" "}{publishedData}
+          <div className="lora-800" style={{ color: "#666666"}}>
+            Creative Writing
           </div>
-          <div
-            className="mb-4 page-header d-flex justify-content-center align-items-center text-center"
-            style={{ maxWidth: 1100 }}
-          >
-            A Catalyst for Unprecedented Growth in the City’s Housing Market
+          <div className="mb-4 page-header d-flex justify-content-center align-items-center text-center">
+            Project Writing: Pune Metro Rail Project
           </div>
           <div className={`${large ? "d-flex mb-5" : "row row-cols-1 mx-0 mb-4"}`}>
             {tags_array?.map((arr, index) => {
               return (
                 <div
                   key={index}
-                  className={`${large ? "mx-3 px-3" : "col me-2 mb-2"} text-primary body-text2 d-flex justify-content-center align-items-center`}
+                  className={`${large ? "mx-3 px-3" : "col me-2 mb-2"} text-primary body-text2 d-flex justify-content-center align-items-center bg-tertiary`}
                   style={{
                     width: "auto",
                     height: 28,
                     borderRadius: 14,
-                    backgroundColor: "#e6e7fa",
                   }}
                 >
                   {arr}
@@ -63,20 +59,35 @@ const Blog = () => {
         <div
           className="d-flex justify-content-center align-items-center overflow-hidden border-0"
           style={{
-            maxWidth: 840,
+            maxWidth: 900,
             maxHeight: "auto",
             borderRadius: 30,
           }}
         >
           <Image
             className="w-100"
-            src={kohinoorGroup}
-            alt="Kohinoor Group"
+            src={toiImage}
+            alt="Times of India Image"
           />
         </div>
-        <i className="w-100 mt-1" style={{textAlign: "left", maxWidth: 800}}>Credits: Kohinoor group</i>
+        <div className="w-100 my-3" style={{textAlign: "left"}}>
+          <span style={{ color: "#666666" }}>by</span>
+          <span style={{ color: "red" }}> Ar. Prachi Kurle & Ar. Vishakha Paygude </span>
+          <span style={{ color: "#666666" }}>on 04 November 2024</span>          
+        </div>
+        <div style={{textAlign: "left"}}>
+          <b>Summary</b>: The 43.8-kilometer extension of Pune Metro Phase 2 is transforming the city's real 
+          estate landscape. This development is enhancing connectivity and enormously boosting property 
+          prices, especially in eastern pockets like Kharadi, Viman Nagar, Wagholi, and Hadapsar-Mundhwa. 
+          The rapid development of Wagholi and Hadapsar-Mundhwa are backed by metro connectivity and higher 
+          FSI allowances, while Kharadi and Viman Nagar are all set to become elite residential and 
+          commercial hubs. Residential and commercial properties are booming, especially in areas around 
+          Metro stations. Establishing Pune as a metro-connected city, the new initiative ensures high returns 
+          in strategic centers for investors
+        </div>
       </Container>
-      <Container className="py-1 user-select-none" style={{ maxWidth: 840 }}>
+      <Container className="py-1 user-select-none" style={{ maxWidth: 900 }}>
+        <hr style={{ color: "#98A2B3" }} />
         <div style={{ textAlign: 'justify' }}>
           Pune’s real estate market is undergoing a transformative shift, largely driven by the rapid 
           expansion of the Pune Metro Phase 2 project. As new Metro corridors are unveiled, areas once 
@@ -273,7 +284,7 @@ const Blog = () => {
         <div className={`d-flex justify-content-between ${large ? "" : "flex-column align-items-center"}`}>
           <div className="d-flex justify-content-start align-items-center mb-lg-0 mb-3">
             <div className="overflow-hidden" style={{ width: 50, height: 50, borderRadius: "50%" }}>
-              <Image className="w-100" src={authorImage} alt="Ar. Prachi Kurle Headshot" style={{ objectFit: "cover" }} />
+              <Image className="w-100" src={prachiKurle} alt="Ar. Prachi Kurle Headshot" style={{ objectFit: "cover" }} />
             </div>
             <div className="ms-3 d-flex flex-column justify-content-center align-items-center">
               <p className="subtitle m-0">Ar. Prachi Kurle</p>
@@ -292,7 +303,7 @@ const Blog = () => {
               overlay={renderTooltip}
             >
               <Button
-                className="bg-white text-black poppins-500 me-1"
+                className="bg-white text-black lora-500 me-1"
                 onClick={copyToClipboard}
                 style={{
                   paddingLeft: large ? 30 : 16,
@@ -348,6 +359,27 @@ const Blog = () => {
             <a
               href="https://www.indextap.com/blog/pune-housing-market-soars-to-new-heights-in-cy23-a-comprehensive-report-on-trends-growth-and-future-prospects/"
               target="blank"
+            >
+              https://www.indextap.com/blog/pune-housing-market-soars-to-new-heights-in-cy23-a-comprehensive-report-on-trends-growth-and-future-prospects/
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.timesnownews.com/business-economy/real-estate/eastern-pune-sees-real-estate-boom-with-metro-phase-2-development-article-115599702"
+            >
+              https://www.timesnownews.com/business-economy/real-estate/eastern-pune-sees-real-estate-boom-with-metro-phase-2-development-article-115599702
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://royalresidencies.com/eastern-pune-witnesses-real-estate-surge-amid-metro-phase-2-expansion/"
+            >
+              https://royalresidencies.com/eastern-pune-witnesses-real-estate-surge-amid-metro-phase-2-expansion/
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.indextap.com/blog/pune-housing-market-soars-to-new-heights-in-cy23-a-comprehensive-report-on-trends-growth-and-future-prospects/"
             >
               https://www.indextap.com/blog/pune-housing-market-soars-to-new-heights-in-cy23-a-comprehensive-report-on-trends-growth-and-future-prospects/
             </a>

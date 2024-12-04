@@ -96,7 +96,7 @@ const Footer = () => {
             <span className="d-flex justify-content-center align-items-center text-secondary border-0">
               <IoLocationSharp />
             </span>
-            <b className="text-secondary ms-2">Assistant Professor, SMEF's Brick School of Architecture, Pune - 411060</b>
+            <b className="text-secondary ms-2">SMEF's Brick School of Architecture, Pune - 411060</b>
           </a>
           <a
             href="tel:+91 8552004072"

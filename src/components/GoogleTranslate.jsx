@@ -31,7 +31,7 @@ const GoogleTranslate = () => {
 
     return (
         <div>
-            <div className="bg-tertiary" style={{ textAlign: 'left' }}>
+            <div className="bg-secondary" style={{ textAlign: 'left' }}>
                 <div id="google_translate_element"></div>
             </div>
         </div>

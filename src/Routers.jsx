@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const Routers = () => {
   return (
     <Router>
-      <Container fluid className="px-0 poppins">
+      <Container fluid className="px-0 lora">
         <Navbar />
         <Routes>
           <Route path="brick-article" element={<Home />} />

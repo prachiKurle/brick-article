@@ -32,7 +32,7 @@ const NavBar = () => {
     weight: "500",
     lineHeight: "24px",
     size: "20px",
-    fontFamily: "Poppins",
+    fontFamily: "Lora",
   };
 
   return (
@@ -44,20 +44,20 @@ const NavBar = () => {
           style={{ minHeight: 92 }}
         >
           <Container fluid className="bg-white d-flex justify-content-end px-5" style={{height: 40}}>
-            Ar. Prachi Kurle
+            Ar. Prachi Kurle &nbsp;&&nbsp;  Ar. Vishakha Paygude
           </Container>
-          <Container fluid className="px-5 py-2 bg-primary">
+          <Container fluid className="px-5 py-2 bg-tertiary">
             <Navbar.Brand href="/" className="p-0 d-flex align-items-center">
-              <Image src={websiteLogo} alt="SKV Logo" height={60} loading="lazy" />
+              <Image src={websiteLogo} alt="Creative Writing Logo" height={60} loading="lazy" />
             </Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link
                 className="text-secondary px-3 px-lg-2 body-text2"
-                href={`/`}
+                href={`/brick-article`}
                 style={{ textDecoration: "none" }}
               >
                 <div
-                  className={`my-1 text-white poppins-700`}
+                  className={`my-1 text-black lora-700`}
                 >
                   Home
                 </div>
@@ -80,14 +80,14 @@ const NavBar = () => {
               <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center">
                 <a href="mailto:info@skvbusiness.com">
                   <Button
-                    className="bg-secondary text-primary primary-button border border-info poppins-600 me-3"
+                    className="bg-tertiary text-primary primary-button border border-info lora-600 me-3"
                     style={{ width: 44, height: 44, borderRadius: 22 }}
                   >
                     <GoMail size={18} />
                   </Button>
                 </a>
                 <div
-                  className="bg-white text-primary primary-button border border-info poppins-500 me-3 d-flex justify-content-center align-items-center px-2"
+                  className="bg-white text-primary primary-button border border-info lora-500 d-flex justify-content-center align-items-center px-2"
                   style={{
                     borderRadius: 22,
                     height: 44,
@@ -95,19 +95,6 @@ const NavBar = () => {
                 >
                   <GoogleTranslate />
                 </div>
-                <Button
-                  className="bg-primary text-white primary-button poppins-500"
-                  style={{
-                    paddingLeft: 26,
-                    paddingRight: 26,
-                    borderRadius: 27,
-                    height: 54,
-                    border: "2px solid #ffffff"
-                  }}
-                  onClick={() => navigate(`/get-in-touch`)}
-                >
-                  Contact
-                </Button>
               </div>
             </Navbar.Collapse>
           </Container>
@@ -217,7 +204,7 @@ const NavBar = () => {
                         onClick={() => setOpen(false)}
                         style={activeBar}
                       >
-                        <h3 className="poppins-500 p-0 m-0">Home</h3>
+                        <h3 className="lora-500 p-0 m-0">Home</h3>
                       </Nav.Link>
                       <hr className="w-100" />
                       <div className="w-100 d-flex justify-content-center">
@@ -227,7 +214,7 @@ const NavBar = () => {
                         href="mailto:info@skv.com"
                         className="m-3 text-primary d-flex flex-column justify-content-center align-items-center text-decoration-none"
                       >
-                        <h3 className="poppins-500 p-0 m-0">
+                        <h3 className="lora-500 p-0 m-0">
                           <GoMail size={20} /> Mail
                         </h3>
                       </a>
@@ -238,7 +225,7 @@ const NavBar = () => {
                         onClick={() => setOpen(false)}
                         // style={activeBar}
                       >
-                        <h3 className="poppins-500 p-0 m-0">
+                        <h3 className="lora-500 p-0 m-0">
                           Contact
                         </h3>
                       </Nav.Link>

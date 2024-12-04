@@ -5,7 +5,7 @@ import {
   FaLinkedin,
   FaPinterest,
   FaSquareXTwitter,
-  FaYoutube,
+  FaInstagram,
 } from "react-icons/fa6";
 import { HiPhone } from "react-icons/hi";
 import { useMediaQuery } from "react-responsive";
@@ -35,9 +35,9 @@ const Footer = () => {
     },
     {
       id: 3,
-      title: "Youtube",
-      icon: <FaYoutube size={32} color="#e2e2e2" />,
-      route: "https://www.youtube.com/@pixie1062",
+      title: "Instagram",
+      icon: <FaInstagram size={32} color="#e2e2e2" />,
+      route: "https://www.instagram.com/prachiiii.k/",
     },
     {
       id: 4,
